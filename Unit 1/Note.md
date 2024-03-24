@@ -1,0 +1,2 @@
+# NOTE:
+Other activities in other units included additions to the project in the Unit 1 Directory. The stages of the project are not reflected in this repository, and the Unit 1 Directory contains the final version.

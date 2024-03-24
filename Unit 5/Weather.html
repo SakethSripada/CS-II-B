@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!-- the DIV that will contain the widget -->
+  <div class="weatherWidget"></div>
+
+  <script>
+      window.weatherWidgetConfig = window.weatherWidgetConfig || [];
+      window.weatherWidgetConfig.push({
+          selector: ".weatherWidget",
+          apiKey: "W362DG8HBF7VWQFFXYQSVVRF8",
+          location: "Dallas, TX", //Enter an address
+          unitGroup: "us", //"us" or "metric"
+          forecastDays: 7, //how many days forecast to show
+          title: "Dallas 7 Day Forecast", //optional title
+          showTitle: true,
+          showConditions: true
+      });
+
+      (function() {
+          var d = document, s = d.createElement('script');
+          s.src = 'https://www.visualcrossing.com/widgets/forecast-simple/weather-forecast-widget-simple.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+      })();
+  </script>
+
+</body>
+
+</html>
